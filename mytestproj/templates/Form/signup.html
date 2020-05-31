@@ -1,0 +1,71 @@
+{% extends 'mytestproj/templates/_layout/base_layout.html' %}
+
+{% block title %}
+    <title>SignUp</title>
+{% endblock %}
+
+{% block header %}
+<!-- To escape navbar from base layout -->
+{% endblock %}
+
+{% block content %}
+    <div class="parrent">
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb1t23Hg0XAtNrs_xuH7RhCmLZNhmb-XoX718tV7qpnJIb-AGg&usqp=CAU" alt=""> 
+            <form>
+                <div class="dws-input">
+                    <input type="text" name="username" placeholder="Имя" pattern="[А-Яа-яЁё]" required>
+                </div>
+                <div class="dws-input">
+                    <input type="text" name="username" placeholder="Фамилия" required>
+                </div>
+                <div class="dws-input">
+                    <input type="text" name="username" placeholder="Отчество" required>
+                </div>
+                <div class="dws-input">
+                    <input type="text" name="username" placeholder="Введите ваш e-mail" required>
+                </div>
+                <div class="dws-input">
+                    <input type="password" name="password" placeholder="Введите пароль" required>
+                </div>
+                <div class="dws-input">
+                    <input type="password" name="password" placeholder="Введите пароль повторно" required>
+                </div>
+                <div class="input">
+                    <input type="tel" name="" placeholder="Телефон в формате +7" pattern="+7-xxx-xxx-xx-xx" required><br />
+                    <input type="tel" name="index" placeholder="Введите почтовый индекс" pattern="[0-9]{6}" required>
+                    <input type="color" name=""><br />
+                    <input type="date" name="calendar"  placeholder="Выберите дату рождения" required><br/>
+                    <input class="n" type="number" name="old" placeholder="выберите ваш возраст" min="18" max="100">
+                    <input type="text" name="adress" placeholder="Введите ваш адрес" required>
+                    
+                    <p><b>Выберите ваш пол</b></p>
+                    <p><input class="pol" name="pol" type="radio" value=man>Мужской</p>
+                    <p><input class="pol" name="pol" type="radio" value="woman">Женский</p>
+                    <p><select  size="1"required >
+                        <option value="none" hidden="" selected>выберите город</option>
+                        <option value="Saratov">Саратов</option>
+                        <option value="Moscow">Москва</option>
+                        <option value="spb">Санкт-Петербург</option>
+                        <option value="Samara">Самара</option>
+                    </select></p>
+                    <p><b>Укажите, откуды вы узнали о нашем магазине</b></p>
+                    <p><input  name="q1" type="radio" value="">Рассказали родственники</p>
+                    <p><input  name="q2" type="radio" value="">Узнал от прохожих</p>
+                    <p><input  name="q3" type="radio" value="">Увидел вашу рекламу об открытии</p>
+                    <p><input  name="q4" type="radio" value="">Наткнулся в интернете</p>
+                    <input type="file" name="" accept="image/jpeg" required><br />
+                    <input  type="reset" name="reset">
+                </div>               
+                <p><input type="checkbox" name="" required>Согласие на обработку персональных данных</p><br />
+                <input class="dws-submit" type="submit" name="submit" value="Зарегистрироваться">
+                <br />
+            </form>
+            <div class="social">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+{% endblock %}

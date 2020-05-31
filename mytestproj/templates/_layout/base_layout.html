@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static style %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome-4.7.0/css/font-awesome.css' %}">
+    <script src="{% static 'js/jquery-3.5.0.min.js' %}" type="text/javascript" ></script>
+    <script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript" ></script>
+    {% block title %}
+        <title>Document</title>
+    {% endblock %}
+</head>
+<body>
+    {% block header %}
+        {% include 'mytestproj/templates/_layout/navbar.html' %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+</body>
+</html>

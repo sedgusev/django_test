@@ -1,0 +1,114 @@
+body{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRi5ItEKqHF2JlBWn59m0jMcXT29r3-L-0Qgm4JquBy30W1Q2Fd&usqp=CAU);
+}
+a{
+    color: rgb(248, 245, 245);
+}
+a.hover{
+    text-decoration: none;
+}
+p{
+    color: white;
+    text-align: left;
+    padding-left: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    width: 450px;
+    background-color: #182134;
+    margin: 250px auto;
+    text-align: center;
+    box-shadow: 0 -5px 0 #3adbfd;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 20px;
+}
+.container img{
+    width: 120px;
+    height: 120px;
+    margin: -60px 0 30px 0;
+    border: 5px solid #1a394f;
+    border-radius: 50%;
+}
+input[type="text"], input[type="password"],input[type="date"],input[type="color"],input[type="tel"],input[type="file"]{
+    width: 300px;
+    height: 35px;
+    font-size: 18px;
+    margin-bottom:25px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-left: 40px;
+}
+select{
+    width: 340px;
+    height: 35px;
+    font-size: 18px;
+    margin-bottom:25px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-left: 40px;
+    
+   
+}
+select:hover::before{
+    color: #319ebc;
+    transition: all 0.3s;
+}
+.dws-submit{
+    padding:13px 30px;
+    margin: 5px 0 20px 0;
+    font-size: 15px;
+    color: #fff;
+    background-color: #2ca8c6;
+    border: none;
+    border-bottom: 4px solid #6ee9fd;
+    cursor: pointer;
+}
+.dws-submit:hover{
+    transition: all 0.5s;
+    background: #fff;
+    color: #2c536c;
+}
+.dws-input::before{
+   
+    position: absolute;
+    font-size: 25px;
+    padding:10px 0 0 7px;
+    color: #2c536c;
+
+}
+
+.dws-input:hover::before{
+    color: #319ebc;
+    transition: all 0.3s;
+}
+.dws-input input:hover{
+    box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
+}
+.social i{
+    color: #fff;
+    font-size: 20px;
+    width: 20px;
+    padding: 10px;
+}
+.social i:hover{
+    background-color: #fff;
+    color: #1a394f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  input:hover::before{
+    color: #319ebc;
+    transition: all 0.3s;
+}
+input:hover{
+    box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
+}
+.n{
+    width: 300px;
+    height: 35px;
+    font-size: 18px;
+    margin-bottom:25px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-left: 40px;
+}

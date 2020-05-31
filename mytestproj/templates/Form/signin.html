@@ -1,0 +1,36 @@
+{% extends 'mytestproj/templates/_layout/base_layout.html' %}
+
+{% block title %}
+    <title>SignIn</title>
+{% endblock %}
+
+{% block header %}
+<!-- To escape navbar from base layout -->
+{% endblock %}
+
+{% block content %}
+    <div class="parrent">
+        <div class="container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb1t23Hg0XAtNrs_xuH7RhCmLZNhmb-XoX718tV7qpnJIb-AGg&usqp=CAU" alt="">
+            <form method="POST" action="{{ signin }}"> {% csrf_token %}
+                <div class="dws-input">
+                    <input type="text" name="username" placeholder="Введите логин">
+                </div>
+                <div class="dws-input">
+                    <input type="password" name="password" placeholder="Введите пароль">
+                </div>
+                    <input class="dws-submit" type="submit" name="submit" value="Войти">
+                <br />
+            </form>
+            <form action="{{ signup }}" method="GET">
+                <input  class="dws-submit" type="submit" value="Зарегистрироваться"><br />
+                <a href="#">Восстановить пароль</a>
+            </form>
+            <div class="social">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+{% endblock %}
